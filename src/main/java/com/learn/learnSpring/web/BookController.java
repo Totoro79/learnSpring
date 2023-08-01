@@ -20,6 +20,10 @@ public class BookController {
 
     @GetMapping
     public Iterable findAll() {
+//        WebApplicationSpecificConfiguration webApplicationSpecificConfiguration = new WebApplicationSpecificConfiguration();
+//        webApplicationSpecificConfiguration.healthCheckController();
+//
+//        webApplicationSpecificConfiguration.healthCheckController1();
         return bookRepository.findAll();
     }
 
